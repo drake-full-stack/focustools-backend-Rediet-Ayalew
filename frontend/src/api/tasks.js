@@ -1,6 +1,10 @@
 // Base URL for all API calls - change this for deployment
 const API_URL = 'http://localhost:3001/api';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
+// All your fetch calls
+fetch(`${API_BASE_URL}/api/tasks`)
+fetch(`${API_BASE_URL}/api/auth/login`)
 /**
  * Fetch all tasks from backend
  */
